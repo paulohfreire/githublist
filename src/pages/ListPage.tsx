@@ -1,0 +1,12 @@
+export default function ListPage() {
+  return (
+    <div>
+      <h1>Lista de repositórios</h1>
+      <ul>
+        <li>Repo 1</li>
+        <li>Repo 2</li>
+        <li>Repo 3</li>
+      </ul>
+    </div>
+  );
+}
