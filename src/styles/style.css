@@ -31,11 +31,6 @@ h1 {
   margin-top: 100px;
 }
 
-.form {
-  max-width: 700px;
-  display: flex;
-}
-
 input {
   flex: 1;
   margin-top: 60px;
