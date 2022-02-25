@@ -1,5 +1,6 @@
 import "../styles/style.css";
 import { useEffect, useState } from "react";
+import { RepositoryItem } from "../components/RepositoryItem";
 
 export default function ListPage() {
   const [repos, setRepos] = useState<any[]>([]);
@@ -35,7 +36,7 @@ export default function ListPage() {
   };
 
   return (
-    <div>
+    <section className="repository-list">
       <h1>Lista dos repositórios do usuário</h1>
       <input
         name="repository"
@@ -50,13 +51,9 @@ export default function ListPage() {
 
       <ul>
         {repos.map((repo) => {
-          return (
-            <li key={repo.id}>
-              <p>{repo.name}</p>
-            </li>
-          );
+          return <RepositoryItem key={repo.name} repo={repo} />;
         })}
       </ul>
-    </div>
+    </section>
   );
 }

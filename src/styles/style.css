@@ -60,4 +60,28 @@ button:hover {
   background: #069e4a;
 }
 
+section.repository-list {
+  margin: 40px;
+}
+section.repository-list h1 {
+  margin-bottom: 16px;
+}
+section.repository-list ul {
+  list-style: none;
+}
+section.repository-list ul li + li {
+  margin-top: 20px;
+}
+section.repository-list ul li p {
+  font-size: 14px;
+  color: #444;
+  margin-top: 8px;
+}
+section.repository-list ul li a {
+  display: inline-block;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #8257e6;
+}
+
 /*# sourceMappingURL=style.css.map */
